@@ -1,0 +1,22 @@
+package javaworkout;
+
+public class CheckPalindromeLogic1 {
+
+	public static void main(String[] args) {
+	  /*Write a Program to check the palindrome in the given String
+		Input="malayalam"  ------>   Output=Yes,Given String is Palindrome
+		Input="testleaf"  ------>   Output=Yes,Given String is not Palindrome*/
+	
+		String s="malayalam";
+		String rev="";
+		for (int i =s.length()-1; i >=0; i--) 
+		{
+			rev +=s.charAt(i);
+		}
+		if (rev.equals(s)) {
+			System.out.println("yes,Given String "+s+ " is Palindrome");
+		}else {
+		System.out.println("yes,Given String "+s+ "is not Palindrome");
+	}
+  }	
+}
