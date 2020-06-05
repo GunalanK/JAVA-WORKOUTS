@@ -1,0 +1,29 @@
+import java.util.Arrays;
+import java.util.Collections;
+
+
+public class SortAndReverseAnArray {
+
+	public static void main(String[] args) {
+
+
+		int[] array = {5,1,33,79,22,45};
+		System.out.println("Sorted Array");
+		Arrays.sort(array);
+		for (int i : array) {
+			System.out.print(i+" ");
+		}
+		System.out.println("Reversed Array");
+		for (int i = array.length-1; i >=0; i--) {
+			System.out.print(array[i]+" ");
+		}
+		
+    	//Method 2 - Reverse String
+		Integer[] array2 = {1,2,3,4};
+		Collections.reverse(Arrays.asList(array2));
+		System.out.println("MEthod 2"+Arrays.toString(array2));
+		
+		
+	}
+
+}
